@@ -1,10 +1,12 @@
+package Financeiro;
+
 import java.time.LocalDate;
 import java.util.*;
 import java.io.*;
 
 public class DiariodeGastos {
     private List<Gasto> gastos = new ArrayList<>();
-    private static final String ARQUIVO = "gastos.csv";
+    private static final String ARQUIVO = "Financeiro/gastos.csv";
 
     public DiariodeGastos() {
         carregarGastos();

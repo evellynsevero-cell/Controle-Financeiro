@@ -1,5 +1,6 @@
+package Financeiro;
+
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public class Gasto implements Serializable {
     private final String descricao;

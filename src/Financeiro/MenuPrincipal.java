@@ -1,3 +1,5 @@
+package Financeiro;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -75,7 +77,7 @@ public class MenuPrincipal {
         }
 
         diario.adicionarGasto(new Gasto(descricao, categoria, valor, data.toString()));
-        System.out.println("Gasto adicionado!");
+        System.out.println("Financeiro.Gasto adicionado!");
     }
 
     private static void corrigirGasto(DiariodeGastos diario, Scanner scanner) {
@@ -125,7 +127,7 @@ public class MenuPrincipal {
         }
 
         diario.editarGasto(indice, new Gasto(desc, cat, valor, novaData.toString()));
-        System.out.println("Gasto corrigido!");
+        System.out.println("Financeiro.Gasto corrigido!");
     }
 
     private static void removerGasto(DiariodeGastos diario, Scanner scanner) {
@@ -139,7 +141,7 @@ public class MenuPrincipal {
         if (indice == -1) return;
 
         if (diario.removerGastos(indice)) {
-            System.out.println("Gasto removido!");
+            System.out.println("Financeiro.Gasto removido!");
         } else {
             System.out.println("Índice inválido.");
         }
